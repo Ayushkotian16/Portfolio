@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayush R Kotian | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 2rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-left: 10px;
+    }
+    /* h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 5px;
+      height: 25px;
+      background: #222;
+    } */
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: #fff;
+      background: #222;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .card a:hover {
+      background: #000;
+    }
+    footer {
+      text-align: center;
+      background: #111;
+      color: #ccc;
+      padding: 1.5rem 1rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav a { margin: 0.5rem; }
+    }
+    #additional-info {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  color: #334155;
+}
+
+#additional-info h2 {
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+#contact {
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  color: #1e293b;
+}
+
+#contact h2 {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+#contact p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+#contact a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+#contact p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+
+.contact-link img {
+  width: 24px;
+  height: 24px;
+  filter: invert(30%) sepia(80%) saturate(600%) hue-rotate(180deg); /* optional subtle color tweak */
+  transition: filter 0.3s ease;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-link:hover img {
+  filter: invert(50%) sepia(90%) saturate(900%) hue-rotate(180deg);
+}
+
+  </style>
+</head>
+<body>
+<header style="background: #1f2937; color: white; padding: 2rem 1rem;">
+  <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+    <img src="image/IMG_20230529_192621_520.jpg" alt="Ayush R Kotian"
+         style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 10px rgba(0,0,0,0.2);" />
+    <div style="text-align: left;">
+      <h1 style="font-size: 2.5rem;">Ayush R Kotian</h1>
+      <p style="font-size: 1.1rem; margin-top: 0.3rem;">Student | Aspiring Software Developer</p>
+      <p style="font-size: 1rem; opacity: 0.8;">Padu Inna, Udupi, Karnataka, 576121</p>
+    </div>
+  </div>
+</header>
+
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am an aspiring IT professional with a passion for solving real-world problems using technology. I'm currently pursuing a BCA degree and enjoy building apps, writing clean code, and continuously learning new tools and frameworks. My strengths lie in being a quick learner, problem solver, and team player.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <p><strong>Year:</strong> 2022 – Present</p>
+      <p><strong>University:</strong> Mangalore University</p>
+      <p><strong>Institution:</strong> Vijaya College, Mulki</p>
+    </div>
+    <div class="card">
+      <h3>Pre-University Course (PUC)</h3>
+      <p><strong>Marks:</strong> 79.83%</p>
+      <p><strong>Board:</strong> Karnataka Secondary Education Examination Board (KSEEB)</p>
+      <p><strong>Institution:</strong> PoornaPrajna PU College, Admar</p>
+    </div>
+    <div class="card">
+      <h3>Secondary School Leaving Certificate (SSLC)</h3>
+      <p><strong>Marks:</strong> 72.96%</p>
+      <p><strong>Board:</strong> Karnataka Secondary Education Examination Board (KSEEB)</p>
+      <p><strong>Institution:</strong> Lions English Medium School, Padubidri</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Kaun Banega Crorepati</h3>
+      <p>A console-based quiz game built in Python inspired by the famous KBC show. It uses conditionals, loops, and scoring logic to simulate real gameplay.</p>
+      <p><strong>Technologies:</strong> Python</p>
+      <a href="https://github.com/Ayushkotian16/Crorepati" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Website Quiz Application</h3>
+      <p>A dynamic web-based quiz platform where users can register, take quizzes, and see their scores. Backend integration using PHP and data stored in MySQL.</p>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+      <a href="https://github.com/Ayushkotian16/Quiz" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>Responsive web app that fetches live weather data using public weather APIs. Displays temperature, humidity, and location info based on user input.</p>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript, API</p>
+      <a href="https://github.com/Ayushkotian16/Weather" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Tic-Tac-Toe</h3>
+      <p>Classic two-player game developed in Python. Implements game board logic, win detection, and interactive CLI play using loops and conditions.</p>
+      <p><strong>Technologies:</strong> Python</p>
+      <a href="https://github.com/Ayushkotian16/Tic-Toc-Toe" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Leadership Training Program</h3>
+      <p>Two-day leadership workshop by M.R. Pai Foundation, Forum of Free Enterprise, and Vijaya College Mulki. Focused on confidence, communication, and decision-making.</p>
+    </div>
+    <div class="card">
+      <h3>Diploma in Computer Applications</h3>
+      <p>Completed diploma at Manipal Education Centre, Padubidri. Covered MS Office tools, basics of programming, and practical IT skills.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card"><h3>Languages</h3><p>C, C++, Java, Python, R</p></div>
+    <div class="card"><h3>Web Development</h3><p>HTML, CSS, JavaScript</p></div>
+    <div class="card"><h3>Databases</h3><p>MySQL, MS Access</p></div>
+    <div class="card"><h3>Tools</h3><p>VS Code, GitHub, MS Office</p></div>
+    <div class="card"><h3>Operating System</h3><p>Windows</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    <a href="mailto:ayushrkotian16@gmail.com" class="contact-link" aria-label="Email">
+      <img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Email icon" />
+      ayushrkotian16@gmail.com
+    </a>
+  </p>
+  <p>
+    <a href="tel:+919901933947" class="contact-link" aria-label="Phone">
+      <img src="https://cdn-icons-png.flaticon.com/24/724/724664.png" alt="Phone icon" />
+      +91 9901933947
+    </a>
+  </p>
+  <p>
+    <a href="https://github.com/Ayushkotian16?tab=packages" target="_blank" rel="noopener" class="contact-link" aria-label="GitHub">
+      <img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="GitHub icon" />
+      github.com/Ayushkotian16
+    </a>
+  </p>
+  <p>
+    <a href="https://www.google.com/maps/search/?api=1&query=Padu+Inna,+Udupi,+Karnataka,+576121" target="_blank" rel="noopener" class="contact-link" aria-label="Address">
+      <img src="https://cdn-icons-png.flaticon.com/24/684/684908.png" alt="Address icon" />
+      Padu Inna, Udupi, Karnataka, 576121
+    </a>
+  </p>
+</section>
+
+
+<section id="additional-info">
+  <h2>Additional Info</h2>
+  <p><strong>Languages Known:</strong> English, Kannada, Hindi</p>
+  <p><strong>Hobbies:</strong> Mobile Gaming, Travelling</p>
+  <p><strong>Activities:</strong> NSS Volunteer</p>
+</section>
+
+<footer>
+  <p>© 2025 Ayush R Kotian. All rights reserved.</p>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const options = { threshold: 0.1 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, options);
+  sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
