@@ -6,7 +6,7 @@ This is the source code for my personal portfolio website showcasing my skills, 
 
 ### Deploying on GitHub Pages
 
-1. Ensure all your website files (`index.html`, `styles.css`, `script.js`, and any assets) are committed to a GitHub repository under your account: [https://github.com/Ayushkotian16](https://github.com/Ayushkotian16).
+1. Ensure all your website files (`index.html`, `styles.css`, `script.js`, and any assets) are committed to a GitHub repository under your account: [https://github.com/Ayushkotian16](https://github.com/Ayushkotian16),[(https://ayushkotian16.github.io/Portfolio/](https://ayushkotian16.github.io/Portfolio/))
 2. Navigate to your repository on GitHub.
 3. Click on the **Settings** tab.
 4. Scroll down to the **Pages** section.
@@ -52,3 +52,4 @@ Open `index.html` in your browser to preview the website locally.
 ---
 
 If you need assistance with customization or deployment, feel free to reach out.
+
